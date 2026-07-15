@@ -4,10 +4,14 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:'Cinzel', serif;
-    background:#000;
     color:#fff;
+    background:#090909;
     overflow-x:hidden;
 }
 
@@ -18,72 +22,64 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
-    url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600') center/cover;
-}
 
-.hero h1{
-    font-size:5rem;
-    font-family:'Great Vibes', cursive;
-}
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.70)),
+    url("https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1800&q=80");
 
-.hero h3{
-    letter-spacing:8px;
-    margin:15px 0;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 .frase{
-    margin-bottom:20px;
-    font-size:1.5rem;
+    font-size:28px;
+    letter-spacing:2px;
+    margin-bottom:25px;
+    text-shadow:0 0 15px rgba(0,0,0,.8);
 }
 
-button,.btn{
-    padding:15px 35px;
+.hero h1{
+    font-family:'Great Vibes',cursive;
+    font-size:110px;
+    color:#f7e4a8;
+    text-shadow:0 0 20px rgba(255,215,0,.5);
+}
+
+.hero h3{
+    margin-top:10px;
+    letter-spacing:10px;
+    color:#fff;
+}
+
+button,
+.btn{
+
+    display:inline-block;
+    margin-top:25px;
+    padding:16px 38px;
     border:none;
     border-radius:40px;
-    background:#d4af37;
-    color:#000;
+    background:linear-gradient(45deg,#d4af37,#f8df79);
+    color:#111;
     font-weight:bold;
-    cursor:pointer;
     text-decoration:none;
+    cursor:pointer;
+    transition:.3s;
 }
+
+button:hover,
+.btn:hover{
+    transform:scale(1.05);
+}
+
 #convite{
-    display:block;
-    padding:60px 20px;
-    background:#111;
+    padding:70px 20px;
+    background:
+    linear-gradient(#0b0b0b,#161616);
 }
 
 .card{
-    max-width:700px;
+
+    max-width:850px;
     margin:auto;
-    background:#1b1b1b;
-    padding:40px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 0 30px rgba(212,175,55,.3);
-}
-
-.card h2,
-.card h3{
-    color:#d4af37;
-    margin:20px 0 10px;
-}
-
-.botoes{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    margin-top:30px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#000;
-    color:#d4af37;
-}
-
-.popup{
-    display:none;
-}
