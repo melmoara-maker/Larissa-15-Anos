@@ -42,9 +42,7 @@ Abrir Convite
 <h2>Você é meu convidado especial!</h2>
 
 <p>
-
 É com muita alegria que convido você para celebrar meus 15 anos.
-
 </p>
 
 <h3>📅 Data</h3>
@@ -58,13 +56,9 @@ Abrir Convite
 <h3>📍 Local</h3>
 
 <p>
-
 R. Mirian Strambi, 290<br>
-
 Recreio Anhanguera<br>
-
 Ribeirão Preto - SP
-
 </p>
 
 <div class="botoes">
@@ -72,11 +66,103 @@ Ribeirão Preto - SP
 <a class="btn"
 href="https://maps.google.com/?q=R.+Mirian+Strambi,+290+Ribeirão+Preto"
 target="_blank">
-
 📍 Como chegar
-
 </a>
 
 <a class="btn"
 href="https://wa.me/5511953902311?text=Confirmo%20minha%20presença%20nos%2015%20anos%20da%20Larissa"
-target
+target="_blank">
+💜 Confirmar Presença
+</a>
+
+<button onclick="abrirTraje()">
+👗 Traje
+</button>
+
+<button onclick="abrirPresentes()">
+🎁 Lista de Presentes
+</button>
+
+</div>
+<div id="contador">
+
+<h3>⏳ Contagem Regressiva</h3>
+
+<p id="dias">Carregando...</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- POPUP TRAJE -->
+
+<div class="popup" id="popupTraje">
+
+<h2>👗 Traje</h2>
+
+<p>
+Esporte Fino
+</p>
+
+<button onclick="fecharTraje()">
+Fechar
+</button>
+
+</div>
+
+<!-- POPUP PRESENTES -->
+
+<div class="popup" id="popupPresentes">
+
+<h2>🎁 Lista de Presentes</h2>
+
+<ul>
+
+<li>💍 Joias (Anéis nº 20)</li>
+
+<li>💄 Maquiagem</li>
+
+<li>👗 Roupa G</li>
+
+<li>👠 Sapato 38/39</li>
+
+<li>🌸 Perfume (Doce ou Amadeirado)</li>
+
+</ul>
+
+<button onclick="fecharPresentes()">
+Fechar
+</button>
+
+</div>
+
+<footer>
+
+<p>
+
+✨ Espero você para viver uma noite inesquecível! ✨
+
+</p>
+
+</footer>
+<script>
+
+function abrirTraje(){
+    document.getElementById("popupTraje").style.display="block";
+}
+
+function fecharTraje(){
+    document.getElementById("popupTraje").style.display="none";
+}
+
+function abrirPresentes(){
+    document.getElementById("popupPresentes").style.display="block";
+}
+
+function fecharPresentes(){
+    document.getElementById("popupPresentes").style.display="none";
+}
+
+const destino = new Date("2026-09-19
