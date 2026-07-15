@@ -1,1 +1,67 @@
+<!-- POPUP TRAJE -->
 
+<div class="popup" id="popupTraje">
+
+<h2>👗 Traje</h2>
+
+<p>
+
+Esporte Fino
+
+</p>
+
+<br>
+
+<button onclick="fecharTraje()">
+
+Fechar
+
+</button>
+
+</div>
+
+<!-- POPUP PRESENTES -->
+
+<div class="popup" id="popupPresentes">
+
+<h2>🎁 Lista de Presentes</h2>
+
+<ul>
+
+<li>💍 Joias (Anéis nº 20)</li>
+
+<li>💄 Maquiagem</li>
+
+<li>👗 Roupa G</li>
+
+<li>👠 Sapato 38/39</li>
+
+<li>🌸 Perfume (Doce ou Amadeirado)</li>
+
+</ul>
+
+<br>
+
+<button onclick="fecharPresentes()">
+
+Fechar
+
+</button>
+
+</div>
+
+<footer>
+
+<p>
+
+✨ Será uma honra compartilhar este momento especial com você. ✨
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
