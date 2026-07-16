@@ -1,168 +1,259 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>15 Anos - Larissa</title>
+<title>Larissa | 15 Anos</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
 <audio id="musica" loop>
-    <source src="musica.mp3" type="audio/mpeg">
+
+<source src="musica.mp3" type="audio/mpeg">
+
 </audio>
+
+<div class="particulas"></div>
 
 <section class="hero">
 
-<h2 class="frase">
-Uma noite inesquecível espera por você...
+<div class="overlay"></div>
+
+<div class="conteudo">
+
+<img src="coroa.png" class="coroa">
+
+<h3 class="frase">
+
+UMA NOITE INESQUECÍVEL ESPERA POR VOCÊ...
+
+</h3>
+
+<h1>
+
+Larissa
+
+</h1>
+
+<h2>
+
+15 ANOS
+
 </h2>
 
-<h1>Larissa</h1>
-
-<h3>15 ANOS</h3>
-
 <button id="abrir">
+
 Abrir Convite
+
 </button>
+
+</div>
 
 </section>
 
 <section id="convite">
 
-<div class="card">
+<div class="convite">
 
-<h2>Você é meu convidado especial!</h2>
+<div class="mensagem">
+
+<h2>
+
+Com imensa alegria...
+
+</h2>
 
 <p>
-É com muita alegria que convido você para celebrar meus 15 anos.
+
+Convido você para celebrar comigo um dos dias mais especiais da minha vida.
+
+Sua presença tornará essa noite ainda mais inesquecível.
+
 </p>
 
-<h3>📅 Data</h3>
+</div>
+
+<div class="card">
+
+<h2>
+
+Detalhes da Festa
+
+</h2>
+
+<div class="item">
+
+<span>📅</span>
+
+<div>
+
+<h3>Data</h3>
 
 <p>19 de Setembro de 2026</p>
 
-<h3>🕗 Horário</h3>
+</div>
+
+</div>
+
+<div class="item">
+
+<span>🕗</span>
+
+<div>
+
+<h3>Horário</h3>
 
 <p>20h00</p>
 
-<h3>📍 Local</h3>
+</div>
 
+</div>
+
+<div class="item">
+
+<span>📍</span>
+
+<div>
+
+<h3>Local</h3>
+
+<p>
+
+R. Mirian Strambi, 290<br>
+
+Recreio Anhanguera<br>
+
+Ribeirão Preto - SP
+
+</p>
+
+</div>
+
+</div>     
+    <section id="convite">
+
+<div class="card">
+
+<h2>✨ Você é meu convidado especial ✨</h2>
+
+<p>
+Com imensa alegria, convido você para celebrar comigo a realização de um dos dias mais especiais da minha história.
+</p>
+
+<p>
+Sua presença tornará essa noite ainda mais inesquecível!
+</p>
+
+<div class="info">
+
+<div class="item">
+<span>📅</span>
+<div>
+<h3>Data</h3>
+<p>19 de Setembro de 2026</p>
+</div>
+</div>
+
+<div class="item">
+<span>🕗</span>
+<div>
+<h3>Horário</h3>
+<p>20h00</p>
+</div>
+</div>
+
+<div class="item">
+<span>📍</span>
+<div>
+<h3>Local</h3>
 <p>
 R. Mirian Strambi, 290<br>
 Recreio Anhanguera<br>
 Ribeirão Preto - SP
 </p>
+</div>
+</div>
+
+<div class="item">
+<span>👗</span>
+<div>
+<h3>Traje</h3>
+<p>Gala / Passeio Completo</p>
+</div>
+</div>
+
+</div>
 
 <div class="botoes">
 
 <a class="btn"
 href="https://maps.google.com/?q=R.+Mirian+Strambi,+290+Ribeirão+Preto"
 target="_blank">
-📍 Como chegar
+📍 Ver Localização
 </a>
 
-<a class="btn"
-href="https://wa.me/5511953902311?text=Confirmo%20minha%20presença%20nos%2015%20anos%20da%20Larissa"
-target="_blank">
-💜 Confirmar Presença
-</a>
-
-<button onclick="abrirTraje()">
-👗 Traje
-</button>
-
-<button onclick="abrirPresentes()">
+<button class="btn" onclick="abrirPresentes()">
 🎁 Lista de Presentes
 </button>
 
-</div>
-<div id="contador">
-
-<h3>⏳ Contagem Regressiva</h3>
-
-<p id="dias">Carregando...</p>
+<a class="btn destaque"
+href="https://wa.me/5511953902311?text=Confirmo%20minha%20presença%20nos%2015%20anos%20da%20Larissa"
+target="_blank">
+💙 Confirmar Presença
+</a>
 
 </div>
 
 </div>
 
 </section>
-
-<!-- POPUP TRAJE -->
-
-<div class="popup" id="popupTraje">
-
-<h2>👗 Traje</h2>
-
-<p>
-Esporte Fino
-</p>
-
-<button onclick="fecharTraje()">
-Fechar
-</button>
-
-</div>
-
 <!-- POPUP PRESENTES -->
 
 <div class="popup" id="popupPresentes">
 
-<h2>🎁 Lista de Presentes</h2>
+    <div class="popup-card">
 
-<ul>
+        <h2>🎁 Lista de Presentes</h2>
 
-<li>💍 Joias (Anéis nº 20)</li>
+        <p>Se desejar me presentear, estas são algumas sugestões:</p>
 
-<li>💄 Maquiagem</li>
+        <ul>
+            <li>💍 Joias (Anéis nº 20)</li>
+            <li>💄 Maquiagem</li>
+            <li>👗 Roupa tamanho G</li>
+            <li>👠 Sapato 38/39</li>
+            <li>🌸 Perfume (Doce ou Amadeirado)</li>
+        </ul>
 
-<li>👗 Roupa G</li>
+        <button class="btn" onclick="fecharPresentes()">
+            Fechar
+        </button>
 
-<li>👠 Sapato 38/39</li>
-
-<li>🌸 Perfume (Doce ou Amadeirado)</li>
-
-</ul>
-
-<button onclick="fecharPresentes()">
-Fechar
-</button>
+    </div>
 
 </div>
 
 <footer>
 
-<p>
+    <h2>Larissa • 15 Anos</h2>
 
-✨ Espero você para viver uma noite inesquecível! ✨
-
-</p>
+    <p>
+        "Que esta noite seja repleta de sorrisos, emoção e momentos inesquecíveis."
+    </p>
 
 </footer>
-<script>
 
-function abrirTraje(){
-    document.getElementById("popupTraje").style.display="block";
-}
+<script src="script.js"></script>
 
-function fecharTraje(){
-    document.getElementById("popupTraje").style.display="none";
-}
-
-function abrirPresentes(){
-    document.getElementById("popupPresentes").style.display="block";
-}
-
-function fecharPresentes(){
-    document.getElementById("popupPresentes").style.display="none";
-}
-
-const destino = new Date("2026-09-19
+</body>
+</html>
