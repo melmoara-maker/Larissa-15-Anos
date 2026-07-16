@@ -20,8 +20,8 @@ body{
     text-align:center;
 
     background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.70)),
-    url("fundo.png");
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("WhatsApp%20Image%202026-07-15%20at%2011.00.04.jpeg");
 
     background-size:cover;
     background-position:center;
